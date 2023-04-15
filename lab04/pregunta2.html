@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicios Propuestos Lab03</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<body>
+    <script src="script.js"></script>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-sm-9">
+                <h2 class="mt-2">Formulario de usuario</h2>
+                <form id="formLogin" action="pregunta2.php" method="post">
+                    <div class="form-group mt-2">
+                        <label for="nombre">Nombres y Apellidos:</label>
+                        <input type="text" class="form-control" id="nombre" name="nombre" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="nombre">Dirección:</label>
+                        <input type="text" class="form-control" id="direccion" name="direccion" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="email">Correo electrónico:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+                    <div class="form-group mt-2">
+                        <label for="num2">Edad:</label>
+                        <input type="number" class="form-control" id="edad" name="edad" required>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary" onclick="validarEdad()">Enviar</button>
+                    <button type="reset" class="btn btn-secondary">Limpiar Campos</button>
+                </form>
+                <br>
+            </div>
+        </div>
+    </div>
+    <!-- Agregamos el script de bootstrap al final del body -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
+</html>
